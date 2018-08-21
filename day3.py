@@ -54,15 +54,10 @@ elif number == 1:
     print(steps)
 else:
     n = cal_n(number)
-
     coor_1_1 = int((n-1)/2+1)  # coordinates for number 1 is: [coor_1_1, coor_1_1]
-
     interval_location = math.floor((n**2 - number)/(n-1))
-
     coor_number = cal_indices(number, n, interval_location)
-
     steps = abs(coor_number[0] - coor_1_1) + abs(coor_number[1] - coor_1_1)
-
     print("The square root of the right lower corner number is: "+ str(n))
     print("The coordinates for number 1 is: [" + str(coor_1_1) + ", " + str(coor_1_1) + "]")
     print("The coordinates for the number is: [" + str(coor_number[0]) + ", " + str(coor_number[1])+ "]")
