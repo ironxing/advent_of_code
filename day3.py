@@ -45,10 +45,10 @@ def cal_indices(number, n, interval_location):
     return coor_number
 
 
-number = int(input("Please input a number: "))
+number = int(input("Please input an integer: "))
 
-if number == 0:
-    print("Pleaes enter an interger that is larger than 0")
+if number <= 0:
+    print("Pleaes enter an integer that is larger than 0")
 elif number == 1:
     steps = 0
     print(steps)
