@@ -22,6 +22,7 @@ location = math.floor((n**2 - number)/(n-1))
 
 
 
+
 print(n)
 print(coor_1_1)
 print(location)
