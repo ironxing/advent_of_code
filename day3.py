@@ -45,7 +45,7 @@ def cal_indices(number, n, interval_location):
     return coor_number
 
 
-number = int(input("Please input an integer: "))
+number = int(input("Please input an integer number: "))
 
 if number <= 0:
     print("Pleaes enter an integer that is larger than 0")
