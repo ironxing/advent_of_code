@@ -1,5 +1,5 @@
 import numpy as np
-
+import pandas as pd
 
 def checksum(m):
     rows = len(m)
@@ -7,19 +7,20 @@ def checksum(m):
 
     diff_sum = 0
     for i in range(rows):
-        min = 9
+        min = 1000000
         max = 0
         for j in range(cols):
             if m[i, j] <= min:
                 min = m[i, j]
             if m[i, j] >= max:
                 max = m[i, j]
-        diff_sum += (max - min)
+        diff_sum += abs(max - min)
 
     return diff_sum
 
 
-m = np.random.randint(10, size=(4, 4))
+csvfile = pd.read_csv("day2_input.csv", sep="\t", header=None)
+m = np.array(csvfile)
 
 print("The matrix is: ")
 print(m)
