@@ -8,7 +8,7 @@ index = 0
 counter = 0
 while index <= len(m)-1:
     current_number = m[index, 0]
-    m[index, 0] = current_number + 1  # Update number at current position
+    m[index, 0] = current_number + 1  # Update the number at current position
     index += current_number  # Get the new index
     counter += 1
 
