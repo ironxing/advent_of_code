@@ -1,1 +1,6 @@
-'fwft (72) -> ktlj'
+a = 'fwft (72) -> ktlj'
+
+splitStr = a.split(" ")
+
+print(splitStr)
+
