@@ -4,11 +4,13 @@ m = [[10, 3, 15, 10, 5, 15, 5, 15, 9, 2, 5, 8, 5, 2, 3, 6]]
 #  We name the current list : x
 #  The "new" list that we work on : y
 
+
 def new_position(width, position):
-    if position + 1 > width - 1:
+    if position + 1 > width - 1:  # If the new position reaches the end of the list, start from the beginning
         return 0
     else:
         return position + 1
+
 
 def list_exist(matrix, list):
     found = False
@@ -20,11 +22,12 @@ def list_exist(matrix, list):
         continue
     return found
 
-#  The current list x
+
 counter = 0
 found = False
 i = 0
 while not found:
+    #  The current list x
     x = m[i]
     width = len(x)
     max_value = max(x)
